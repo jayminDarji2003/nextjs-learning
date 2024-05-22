@@ -50,8 +50,6 @@
 -- loading.js
 -- not-fount.js : this is a custom "page not found" page.
 
-
-
 // Data Feching
 
 ->  Fetch data in "server component"
