@@ -34,3 +34,26 @@
 -- go to one page to another page.
     - to do this functionality, we can do like this
         <Link href={'/account'} >Go to Account page</Link>
+
+    second way of doing same thing
+        - first make that component client component 
+        - we will use useRouter to do this things
+
+
+-- usePathName()  : this hook is used to get the info about path 
+    ex.    URL : localhost:3000/cart 
+        return : /cart
+
+-- searchParams() 
+-- {params}
+-- {searchParams}
+-- loading.js
+-- not-fount.js : this is a custom "page not found" page.
+
+
+
+// Data Feching
+
+->  Fetch data in "server component"
+
+->  Fetch data in "client component"

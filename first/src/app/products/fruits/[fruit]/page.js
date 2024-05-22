@@ -1,3 +1,3 @@
-export default function fruit() {
-    return <h1>fruit</h1>
+export default function fruit({params}) {
+    return <h1>fruit details : {params.fruit}</h1>
 }
