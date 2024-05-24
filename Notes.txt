@@ -53,5 +53,6 @@
 // Data Feching
 
 ->  Fetch data in "server component"
+    - in "server component" we just call the function and get the data.
 
 ->  Fetch data in "client component"
