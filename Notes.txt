@@ -47,8 +47,16 @@
 -- searchParams() 
 -- {params}
 -- {searchParams}
+
+
+
 -- loading.js
--- not-fount.js : this is a custom "page not found" page.
+    -> this is the loading file.
+    ->
+
+
+-- not-fount.js 
+    - this is a custom "page not found" page.
 
 // Data Feching
 
