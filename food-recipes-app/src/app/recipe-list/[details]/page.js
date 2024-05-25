@@ -30,7 +30,7 @@ export default async function RecipeDetails({ params }) {
       <div>
         <p className="font-bold">Ingredients :- </p>
         {
-          recipeDetails.ingredients.map(ingredient => <li className=" text-start">{ingredient}</li>)
+          recipeDetails.ingredients.map(ingredient => <li key={ingredient} className=" text-start">{ingredient}</li>)
         }
       </div>
 

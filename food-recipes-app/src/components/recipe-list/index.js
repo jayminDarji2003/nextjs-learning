@@ -24,7 +24,7 @@ export default function RecipeList({ recipeList }) {
             {recipeList && recipeList.length > 0
               ? recipeList.map((recipe) => {
                 return (
-                  <Link href={`recipe-list/${recipe.id}`}>
+                  <Link key={recipe.id} href={`recipe-list/${recipe.id}`}>
                     <Card>
                       <CardContent className="bg-white rounded-sm overflow-hidden shadow-md cursor-pointer hover:scale-90 transition-all">
                         <div className="w-full aspect-w-16 aspect-h-8 lg:h-80">
