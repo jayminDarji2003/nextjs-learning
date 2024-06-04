@@ -17,6 +17,11 @@ const navLinks = [
         name: "Forgot Password",
         link: "/forgot-password"
     }
+    ,
+    {
+        name: "Blog",
+        link: "/blog"
+    }
 ]
 
 export default function Home() {
