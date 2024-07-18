@@ -1,16 +1,16 @@
-import Notifications from "@/components/Notifications"
-import RevenueMetrices from "@/components/RevenueMetrices"
-import UserAnalytics from "@/components/UserAnalytics"
+export default function ComplexDashboardLayout({ children, users, notifications, revenue }) {
 
-export default function ComplexDashboardLayout({ children }) {
-    return
-    <>
+    return (
         <div>
-            {children}
-        </div>
-        <UserAnalytics />
-        <RevenueMetrices />
-        <Notifications />
+            <div>{children}</div>
 
-    </>
+            <div className="flex bg-red-200">
+                <div className="flex flex-col">
+                    <div>{users}</div>
+                    <div>{revenue}</div>
+                </div>
+                <div className="flex flex-1">{notifications}</div>
+            </div>
+        </div>
+    )
 }
