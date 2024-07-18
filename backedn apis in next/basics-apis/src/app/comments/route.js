@@ -3,31 +3,31 @@ import { comments } from "./data"
 // GET request handler
 // GET : http://localhost:3000/comments
 // to get all comments
-// export async function GET() {
-//     return Response.json(comments)
-// }
+export async function GET() {
+    return Response.json(comments)
+}
 
 // GET comment that comtains the Query params text
 // GET : http://localhost:3000/comments?query=first
 // in above url the first is the text
-export async function GET(request) {
-    // const { searchParams } = new URL(request.url);
-    // or
-    const searchParams = request.nextUrl.searchParams;
-    const text = searchParams.get('query');
-    // console.log("data => ", text)
+// export async function GET(request) {
+//     // const { searchParams } = new URL(request.url);
+//     // or
+//     const searchParams = request.nextUrl.searchParams;
+//     const text = searchParams.get('query');
+//     // console.log("data => ", text)
 
-    // filter comments by text
-    const filteredComments = comments.filter((comment) => comment.text.includes(text));
+//     // filter comments by text
+//     const filteredComments = comments.filter((comment) => comment.text.includes(text));
 
-    if (filteredComments.length === 0) {
-        return Response.json({
-            message: 'No comments found'
-        })
-    }
+//     if (filteredComments.length === 0) {
+//         return Response.json({
+//             message: 'No comments found'
+//         })
+//     }
 
-    return Response.json(filteredComments)
-}
+//     return Response.json(filteredComments)
+// }
 
 // POST request handler
 // POST : http://localhost:3000/comments 

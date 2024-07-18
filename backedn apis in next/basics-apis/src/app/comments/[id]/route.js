@@ -1,3 +1,4 @@
+import { redirect } from "next/navigation"
 import { comments } from "../data"
 
 // GET single comment request handler
@@ -9,9 +10,8 @@ export async function GET(request, { params }) {
     const comment = comments.find(comment => comment.id == params.id)
 
     if (!comment) {
-        return Response.json({
-            message: "Comment not found"
-        })
+        // if id not found then redirect to /comments
+        redirect("/comments")
     }
 
     return Response.json({
